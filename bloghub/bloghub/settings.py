@@ -25,7 +25,8 @@ SECRET_KEY = "django-insecure-co0)fb0tffx(rymu$k79kunx_%xhnwscsylm)8(@fe6m(#9f8&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'https://*.github.dev/']
+CSRF_TRUSTED_ORIGIN = ['http://localhost:8000', 'https://*.github.dev/']
 
 
 # Application definition
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'Blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
