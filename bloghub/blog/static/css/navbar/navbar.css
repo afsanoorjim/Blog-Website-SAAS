@@ -3,4 +3,14 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1vh 2vw;
+}
+
+.nav-logo{
+    font-size: 2rem;
+}
+
+.nav-links a{
+    margin-left: 2rem;
+    
 }
